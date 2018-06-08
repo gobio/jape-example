@@ -10,6 +10,10 @@ mainClassName = "eu.gobio.jape.example.Main"
 //required for Java 9 and later
 applicationDefaultJvmArgs = ["-Djdk.attach.allowAttachSelf=true"]
 
+run{
+    standardInput = System.in
+}
+
 sourceCompatibility = 1.8
 repositories {
     mavenCentral()
